@@ -2,6 +2,8 @@ app-id: org.cosmic_utils.enroll
 runtime: org.freedesktop.Platform
 runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
+sdk-extensions:
+  - org.freedesktop.Sdk.Extension.rust-stable
 base: com.system76.Cosmic.BaseApp
 base-version: stable
 command: cosmic-utils-enroll
@@ -14,17 +16,15 @@ finish-args:
   - --system-talk-name=org.freedesktop.PolicyKit1
   - --system-talk-name=org.freedesktop.Accounts
   - --talk-name=com.system76.CosmicSettingsDaemon
-sdk-extensions:
-  - org.freedesktop.Sdk.Extension.rust-stable
-
-build-options:
-  append-path: /usr/lib/sdk/rust-stable/bin
-  env:
-    CARGO_HOME: /run/build/cosmic-utils-enroll/cargo
 
 modules:
   - name: cosmic-utils-enroll
     buildsystem: simple
+    build-options:
+      append-path: /usr/lib/sdk/rust-stable/bin
+      env:
+        CARGO_HOME: /run/build/cosmic-utils-enroll/cargo
+        CARGO_NET_OFFLINE: 'true'
     build-commands:
       - cargo --offline fetch --manifest-path Cargo.toml
       - cargo build --offline --release
