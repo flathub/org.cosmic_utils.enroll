@@ -39,5 +39,5 @@ modules:
       - type: git
         url: https://github.com/cosmic-utils/enroll.git
         tag: 1.0.8
-        commit: 24883ba37293bec39b7f0a384e7082b335c44160
+        commit: c7e720e0ebc2581378b629366ec8d9ddf8ed6148
       - cargo-sources.json
