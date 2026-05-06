@@ -1,6 +1,6 @@
 app-id: org.cosmic_utils.enroll
 runtime: org.freedesktop.Platform
-runtime-version: '25.08'
+runtime-version: "25.08"
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-stable
@@ -25,7 +25,7 @@ modules:
       append-path: /usr/lib/sdk/rust-stable/bin
       env:
         CARGO_HOME: /run/build/cosmic-utils-enroll/cargo
-        CARGO_NET_OFFLINE: 'true'
+        CARGO_NET_OFFLINE: "true"
     build-commands:
       - cargo --offline fetch --manifest-path Cargo.toml
       - cargo build --offline --release
@@ -38,6 +38,6 @@ modules:
     sources:
       - type: git
         url: https://github.com/cosmic-utils/enroll.git
-        tag: 1.0.8
-        commit: c7e720e0ebc2581378b629366ec8d9ddf8ed6148
+        tag: 1.0.9
+        commit: 0bcbcd66c2396be68f779345cab650f72e2fca13
       - cargo-sources.json
