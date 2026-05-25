@@ -1,4 +1,4 @@
-\app-id: org.cosmic_utils.enroll
+app-id: org.cosmic_utils.enroll
 runtime: org.freedesktop.Platform
 runtime-version: "25.08"
 sdk: org.freedesktop.Sdk
@@ -13,7 +13,6 @@ finish-args:
   - --share=ipc
   - --device=dri
   - --filesystem=xdg-config/cosmic:rw
-  - --filesystem=/var/lib/AccountsService/icons:ro
   - --filesystem=~/.face:ro
   - --system-talk-name=net.reactivated.Fprint
   - --system-talk-name=org.freedesktop.PolicyKit1
