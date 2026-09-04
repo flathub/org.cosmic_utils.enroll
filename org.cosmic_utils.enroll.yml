@@ -1,6 +1,6 @@
 app-id: org.cosmic_utils.enroll
 runtime: org.freedesktop.Platform
-runtime-version: "25.08"
+runtime-version: "26.08"
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-stable
@@ -39,6 +39,6 @@ modules:
     sources:
       - type: git
         url: https://github.com/cosmic-utils/enroll.git
-        tag: v1.2.5
-        commit: 0cac43ba8e80a880ae2f7429b46842089d684d27
+        tag: v1.2.6
+        commit: 8f183538e7443c09a61d3ce939f14e4c1a7d2499
       - cargo-sources.json
