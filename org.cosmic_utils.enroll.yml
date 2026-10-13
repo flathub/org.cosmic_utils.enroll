@@ -12,7 +12,7 @@ finish-args:
   - --socket=fallback-x11
   - --share=ipc
   - --device=dri
-  - --filesystem=xdg-config/cosmic:ro
+  - --filesystem=xdg-config/cosmic:rw
   - --filesystem=~/.face:ro
   - --system-talk-name=net.reactivated.Fprint
   - --system-talk-name=org.freedesktop.PolicyKit1
@@ -40,6 +40,6 @@ modules:
     sources:
       - type: git
         url: https://github.com/cosmic-utils/enroll.git
-        tag: v1.2.8
-        commit: e0c11eae722e45d542d618fe7e610507d7bfef98
+        tag: v1.2.9
+        commit: bad2919c865f920a3fafc7c4b23557fcc91267c5
       - cargo-sources.json
