@@ -40,6 +40,6 @@ modules:
     sources:
       - type: git
         url: https://github.com/cosmic-utils/enroll.git
-        tag: v1.2.11
-        commit: 614ad5cf45a811dfb42b199e5528529bc88ef973
+        tag: v1.2.12
+        commit: 647c1edd326c4e2b898dd5166c962952164fd08b
       - cargo-sources.json
